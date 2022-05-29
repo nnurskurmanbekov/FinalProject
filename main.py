@@ -44,13 +44,14 @@ def ask_directory():
 
 
 window = Tk()
-window.geometry("300x200")
+window.geometry("500x300")
 window.title("Images downloader")
 
 search_key_var = StringVar(value="")
 directory_var = StringVar(value=path.expanduser("~\\Desktop"))
 images_number_var = StringVar(value="")
 
+window.iconbitmap('Logo.ico') # Ala Too University Logo
 
 Label(window, text="Directory :").pack()
 Entry(window, textvariable=directory_var).pack(fill=X)
