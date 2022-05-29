@@ -35,3 +35,9 @@ def download(search_key: StringVar, directory: StringVar, images_number: StringV
             print('Image sucessfully Downloaded: ', filename)
         else:
             print('Image Couldn\'t be retreived')
+            
+        
+def ask_directory():
+    directory = askdirectory()
+    if len(directory) > 0:
+        directory_var.set(directory)
